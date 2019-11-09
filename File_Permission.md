@@ -1,0 +1,1 @@
+**Mỗi đối tượng gắn với 3 loại quyền: read, write, execute. Mỗi quyền được chỉ định cho 3 loại Users**
