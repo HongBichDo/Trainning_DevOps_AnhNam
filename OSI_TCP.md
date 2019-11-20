@@ -1,7 +1,7 @@
 # Mô hình OSI
 Mô hình OSI (Open Systems Interconnection Reference Model) dựa vào nguyên lý tầng cấp để kết nối truyền thông giữa các thiết bị và thiết kế giao thức mạng giữa chúng. Mỗi layer có một nhiệm vụ và chức năng cụ thể giúp tín hiệu được truyền đi nhanh chóng và bảo mật tuyệt đối.
 
-![OSI](image/OSI.png)
+![OSI](images/OSI.png)
 
 ## Các layer trong mô hình OSI
 Mô hình OSI phân chia chức năng thành 7 layer, mỗi layer *chỉ sử dụng chức năng của tầng dưới nó* đồng thời chỉ cho phép tầng trên sử dụng các chức năng của mình.
@@ -16,7 +16,7 @@ Mô hình OSI phân chia chức năng thành 7 layer, mỗi layer *chỉ sư
 ## Quy trình xử lý dữ liệu trong mô  hình OSI
 Mô hình OSI làm việc hai chiều được sử dụng khi một máy tính nào đó nhận dữ liệu mà dữ liệu đó đi ngược trở lên từ lớp vật lý. 
 
-![OSI_data](image/xu_ly_data.jpg)
+![OSI_data](images/xu_ly_data.jpg)
 
 ### Phía máy gửi
 **Các dữ liệu tại máy gửi được xử lý theo trình tự sau:**
@@ -45,7 +45,7 @@ Trong mô hình TCP/IP, `IP` có vai trò quan trọng cho phép máy tín
 
 ## Các giao thức TCP/IP phổ biến
 
-![TCP_IP](image/giaothuc_TCP.PNG)
+![TCP_IP](images/giaothuc_TCP.PNG)
 
 - HTTP: sử dụng truyền dữ liệu không an toàn giữa client-server. Khi client gửi request đến server để xem website, máy chủ web nhận yêu cầu và gửi thông tin về cho client.
 - HTTPS: sử dụng để truyền dữ liệu an toàn giữa client-server. Giao thức này được dùng để gửi dữ liệu một cách bảo mật như giao dịch thẻ tín dụng hoặc dữ liệu cá nhân.
@@ -63,7 +63,7 @@ Trong các tầng khác nhau, dữ liệu mang các thuật ngữ khác
 
 # So sánh mô hình OSI và TCP/IP
 
-![TCP_IP](image/tcp-ip-osi.jpg)
+![TCP_IP](images/tcp-ip-osi.jpg)
 
 | Tiêu chí | OSI | TCP/IP | 
 |----------|-----|--------|
