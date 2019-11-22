@@ -41,7 +41,23 @@ Giao thức này được định nghĩa trong RFC826
 - Bước 9: Thiết bị nguồn A update vào ARP giá trị tương ứng địa chỉ IP và MAC của thiết bị đích B. Lần sau không cần request.
 
 # Phân tích bản tin ARP sử dụng wireshark
- 
+ - Hiển thị ARP trong máy sử dụng command  `arp -a`
+
+![ARP](images/show_arp.PNG)
+
+
+- Bật wireshark để bắt các gói tin
+  Lọc gói tin trong filter là `arp`
+
+ ![ARP](images/arppackage.PNG)
+
+Gói tin ARP 113 request được gửi đi. Who has 10.17.4.1 ? Tell 10.17.6.165 (Tìm địa chỉ MAC của `10.17.4.1` cho `10.17.6.165`)
+
+![ARP](images/arp_request.PNG)
+
+Gói tin ARP repply được trả về. Máy có IP là  `10.17.4.1` có địa chỉ MAC là `00:c1:64:c7:96:00`
+
+![ARP](images/arp_request.PNG)
 
 ## Resource
 - https://vnpro.vn/thu-vien/arp-address-resolution-protocol-va-qua-trinh-phan-phoi-goi-tin-trong-mang-3123.html
