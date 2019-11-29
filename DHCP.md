@@ -1,6 +1,7 @@
 # DHCP là gì?
 Các thiết bị khi muốn kết nối vào mạng đều cần 1 địa chỉ IP. Địa chỉ IP được cấp phát bởi máy chủ DHCP tích hợp trên router. 
 Dynamic Host Configuration Protocol (DHCP) là giao thức cấp phát địa chỉ IP một cách tự động.
+DHCP giao tiếp bằng UDP và sử dụng port
 # Các thành phần của DHCP
 - DHCP client: thiết bị có yêu cầu kết nối mạng
 - DHCP server: máy chủ hoặc router chạy dịch vụ DHCP. Quản lý sự cấp phát địa chỉ IP động.

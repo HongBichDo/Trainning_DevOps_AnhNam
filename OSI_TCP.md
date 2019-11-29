@@ -39,7 +39,7 @@ Mô hình OSI làm việc hai chiều được sử dụng khi một má
 - Tầng Application tiến hành xử lý và gỡ bỏ Header cuối cùng. Máy nhận nhận được dữ liệu của gói tin được truyền đi.
 
 # Mô hình TCP/IP
-TCP/ IP (Transmission Control Protocol/ Internet Protocol - Giao thức điều khiển truyền nhận/ Giao thức liên mạng), là một bộ giao thức trao đổi thông tin được sử dụng để truyền tải và kết nối các thiết bị trong mạng Internet.
+TCP/IP (Transmission Control Protocol/Internet Protocol - Giao thức điều khiển truyền nhận/Giao thức liên mạng), là một bộ giao thức trao đổi thông tin được sử dụng để truyền tải và kết nối các thiết bị trong mạng Internet.
 
 Trong mô hình TCP/IP, `IP` có vai trò quan trọng cho phép máy tính gửi đi gói tin. `TCP` giúp kiểm tra các gói dữ liệu có lỗi hay không? Sau đó gửi yêu cầu truyền lại nếu có lỗi được tìm thấy.
 
