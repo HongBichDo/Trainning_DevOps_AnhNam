@@ -111,7 +111,7 @@ UDP không kết nối trực tiếp với máy nhận mà gửi dữ 
 
 # So sánh TCP và UDP
 
-![UDP](images/tcp_udp_compare.png)
+![UDP](images/tcp-udp-compare.png)
 
 
 UDP thiếu các tín hiệu bắt tay 3 bước, không đảm bảo dữ liệu đã đến đích hay chưa. 
