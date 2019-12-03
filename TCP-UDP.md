@@ -49,11 +49,11 @@ TCP sử dụng quá trình bắt tay 3 bước để thiết lập kê�
 - Gói tin FIN thông báo muốn kết thúc kết nối, bên kia báo tin nhận ACK.
 - Một kết nối có thể ở dạng ` nửa mở ` - một bên kết thúc gửi dữ liệu chỉ nhận thông tin, bên kia tiếp tục gửi.
 
-# Các cổng TCP
+## Các cổng TCP
 TCP sử dụng `số hiệu cổng` để định danh ứng dụng gửi và nhận dữ liệu. FTP(21), TELNET (23), SMTP (25), HTTP (80).
 Các cổng được dùng tạm thời khi kết nối với server hoặc định danh các dịch vụ được đăng kí bởi một bên thứ 3.
 
-# Cấu trúc gói tin TCP
+## Cấu trúc gói tin TCP
 
 ![TCP](images/TCP_package.PNG)
 
@@ -75,6 +75,10 @@ Một gói tin TCP gồm 2 phần: header (20 bytes - có 11 trường) va
  6. FIN: không gửi thêm số liệu
 - Window: số byte có thể nhận bắt đầu từ giá trị của ACK
 - Checksum: kiểm tra header và dữ liệu
+
+## Bắt gói tin TCP
+
+
 
 # UDP là gì?
 UDP (User Datagram Protocol) là giao thức gửi tin đến các máy chủ trên Internet dưới dạng Datagram. 

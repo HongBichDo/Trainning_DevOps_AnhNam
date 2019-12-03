@@ -115,6 +115,22 @@ X-Proxy-Cache: MISS
 X-XSS-Protection: 1; mode=block
 ```
  
+## Quá trình bắt tay 3 bước trong HTTP:
+
+Quá trình bắt tay 3 bước diễn ra như sau:
+
+![HTTP](SYN.PNG)
+Client (192.168.1.17) kết nối đến server 123.30.175.29 với protocol TCP số 6. Cờ báo hiệu `SYN`
+
+![HTTP](ACK_SYN.PNG)
+
+Gói tin số 2 cờ kết nối `SYN,ACK`
+
+![HTTP](ACK.PNG)
+
+Máy client tiếp tục tạo gói tin ACK hoàn thành bắt tay 3 bước
+
+
 # HTTPS - Hypertext-transfer-protocol
 
 ## HTTPS là gì?

@@ -69,6 +69,16 @@ Mã các nước trên thế giới tham gia vào mạng internet đượ
 - ARcount: số lượng tài nguyên ghi lại trong phần thêm vào gói tin
 - NScount: số lượng tài nguyên ghi lại trong các phần có thẩm quyền
 
+# Bắt gói tin DNS
+
+![DNS](DNS_request.PNG)
+
+Trang web đang truy vấn coccoc.com, máy client hỏi máy server - request 169. Dữ liệu tương ứng là UDP/53 
+
+![DNS](DNS_response.PNG)
+
+Server trả về các thông số mà client yêu cầu - response 170
+
 ## Resource
 - https://aws.amazon.com/vi/route53/what-is-dns/
 - https://wiki.matbao.net/kb/dns-la-gi-tam-quan-trong-cua-dns-trong-the-gioi-mang/

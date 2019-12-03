@@ -21,13 +21,13 @@ Mô hình OSI làm việc hai chiều được sử dụng khi một má
 ### Phía máy gửi
 **Các dữ liệu tại máy gửi được xử lý theo trình tự sau:**
 
-- Người dùng đưa các thông tin cần truyền đi như hình ảnh, văn bản vào máy tính.
-- Dữ liệu được chuyển xuống tầng Presentaion, dữ liệu được chuyển thành một dạng chung để mã hóa và nén dữ liệu.
-- Tại tầng Session: bổ sung thông tin cho phiên giao dịch (gửi-nhận).
-- Sau khi tầng Session thực hiện xong, dữ liệu được chuyển xuống tầng Transport. Tại tầng này, dữ liệu được cắt nhỏ thành các Segment cũng làm nhiệm cụ bổ sung thông tin về phương thức vận chuyển dữ liệu đảm bảo tính bảo mật và tin cậy khi truyền.
-- Dữ liệu chuyển xuống tầng Network, các segment tiếp tục được chia nhỏ thành các gói Package khác nhau đồng thời bổ sung thông tin định tuyến đường đi cho gói tin.
-- Dữ liệu được chuyển xuống tầng Data Link, mỗi Package được băm nhỏ thành nhiều Frame và bổ sung thêm các thông tin kiểm tra gói tin chứa dữ liệu để kiểm tra ở máy nhận.
-- Cuối cùng, các frame này được chuyển xuống tầng Physical được chuyển thành một chuỗi các bit nhị phân (0,1) đưa lên các phương tiện truyền dẫn(dây cáp) để truyền đến máy nhận.
+- Application: Người dùng đưa các thông tin cần truyền đi như hình ảnh, văn bản vào máy tính.
+-Presentation: dữ liệu được chuyển thành một dạng chung để mã hóa và nén dữ liệu. Nhận dạng file (hình ảnh, âm thanh) thêm vào đuôi file
+- Tại tầng Session: bổ sung thông tin cho phiên giao dịch (gửi-nhận), data truyền đi từ ứng dụng nào (skype, facebook)
+-Transport: dữ liệu được cắt nhỏ thành các Segment. Quyết định giao thức truyền thông tin cậy là TCP hay giao thức truyền nhanh là UDP - gắn thêm trường TCP Header 
+- Network: các segment tiếp tục được chia nhỏ thành các gói Package khác nhau đồng thời bổ sung thông tin định tuyến đường đi cho gói tin. Gắn thêm IP Header vào dữ liệu tại tầng trên chứa IP nguồn và đích
+- Data Link: mỗi Package được băm nhỏ thành nhiều Frame và bổ sung thêm các thông tin kiểm tra gói tin chứa dữ liệu để kiểm tra ở máy nhận.
+-Physical: dữ liệu chuyển thành một chuỗi các bit nhị phân (0,1) đưa lên các phương tiện truyền dẫn(dây cáp) để truyền đến máy nhận.
 
 ### Phía máy nhận
 - Máy nhận kiểm tra quá trình đồng bộ và đưa chuỗi nhị phân vào vùng đệm. Thông báo cho tầng Data Link đã nhận dữ liệu.
