@@ -1,7 +1,7 @@
 # DNS là gì?
 DNS (Domain Name System - Hệ thống tên miền) hệ thống cho phép thiết lập địa chỉ IP và tên miền trên Internet. Hệ thống DNS chuyển đổi các tên miền website ở dạng www.tenmien.com sang địa chỉ IP tương ứng và ngược lại.
 
-![DNS](DNS.png)
+![DNS](images/DNS.png)
 
 ## Chức năng của DNS
 DNS như người `phiên dịch` và `truyền đạt thông tin`. DNS dịch tên miền thành địa chỉ IP gồm 4 nhóm số khác nhau. Ví dụ `google.com.vn` thành `74.125.236.37` 
@@ -9,10 +9,10 @@ Hệ thống tên miền hoặc domain là tên của website hoạt độ
 Mỗi máy tính, máy chủ trên Internet đều có 1 địa chỉ IP duy nhất thiết lập kết nối giữa server và client. DNS đóng vai trò liên kết với các thiết bị mạng cho các mục đích định vị và địa chỉ hóa các thiết bị trên Internet.
 Ví dụ: Nhập URL `google.com` DNS server truy xuất địa chỉ IP máy chủ google thiết lập liên kết để hiển thi giao diện trang chủ - Quá trình phân giải tên miền (DNS Resolution).
 
-![DNS](DNS_chuc_nang.png)
+![DNS](images/DNS_chuc_nang.png)
 
 # Nguyên tắc hoạt động của DNS
-![DNS](DNS_hoatdong.PNG)
+![DNS](images/DNS_hoatdong.PNG)
 
 Giả sử bạn muốn truy cập vào trang google.com
 - Client gửi request tìm kiếm địa chỉ IP tương ứng với domain google.com tới máy chủ quản lý tên miền cục bộ của mạng - local name server.
@@ -23,7 +23,7 @@ Giả sử bạn muốn truy cập vào trang google.com
 
 # Kiến trúc DNS
 ## Không gian tên miền
-![DNS](DNS_root.PNG)
+![DNS](images/DNS_root.PNG)
 
 Hệ thống DNS là hệ thống dạng phân tán và phân cấp hình cây có đỉnh Root. Khi client truy vấn tên miền sẽ đi lần lượt từ root phân cấp xuống dưới để đến DNS quản lý domain cần truy vấn.
 
@@ -47,7 +47,7 @@ Mã các nước trên thế giới tham gia vào mạng internet đượ
 
 ## Cấu trúc gói tin DNS
 
-![DNS](DNS_package.PNG)
+![DNS](images/DNS_package.PNG)
 
 - ID: có độ dài 16bits chứa mã nhận dạng, được tạo ra bởi một chương trình thay thế cho các truy vấn. Dựa vào ID để phản hồi lại các request từ client
 - QR: trường 1 bit. Thiết lập mặc định là 0 với gói tin truy vấn, 1 với gói tin phản hồi
@@ -71,11 +71,11 @@ Mã các nước trên thế giới tham gia vào mạng internet đượ
 
 # Bắt gói tin DNS
 
-![DNS](DNS_request.PNG)
+![DNS](images/DNS_request.PNG)
 
 Trang web đang truy vấn coccoc.com, máy client hỏi máy server - request 169. Dữ liệu tương ứng là UDP/53 
 
-![DNS](DNS_response.PNG)
+![DNS](images/DNS_response.PNG)
 
 Server trả về các thông số mà client yêu cầu - response 170
 

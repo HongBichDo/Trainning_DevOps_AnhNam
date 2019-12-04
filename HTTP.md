@@ -4,7 +4,7 @@
 ## HTTP là gì?
 HTTP là giao thức truyền tải dữ liệu (văn bản, hình ảnh, âm thanh) giữa Web server và Web client và ngược lại dùng cho World Wide Web . HTTP sử dụng cổng 80. 
 
-![HTTP](HTTP_client_server.PNG)
+![HTTP](images/HTTP_client_server.PNG)
 
 
 ## Cách thức hoạt động của HTTP
@@ -119,14 +119,14 @@ X-XSS-Protection: 1; mode=block
 
 Quá trình bắt tay 3 bước diễn ra như sau:
 
-![HTTP](SYN.PNG)
+![HTTP](images/SYN.PNG)
 Client (192.168.1.17) kết nối đến server 123.30.175.29 với protocol TCP số 6. Cờ báo hiệu `SYN`
 
-![HTTP](ACK_SYN.PNG)
+![HTTP](images/ACK_SYN.PNG)
 
 Gói tin số 2 cờ kết nối `SYN,ACK`
 
-![HTTP](ACK.PNG)
+![HTTP](images/ACK.PNG)
 
 Máy client tiếp tục tạo gói tin ACK hoàn thành bắt tay 3 bước
 
@@ -159,7 +159,7 @@ Khi yêu cầu kết nối HTTPS với trang web:
 
 # So sánh HTTP và HTTPS
 
-![HTTP](HTTP_HTTPS.PNG)
+![HTTP](images/HTTP_HTTPS.PNG)
 
 Sự khác biệt quan trọng giữa HTTP và HTTPS là chứng chỉ SSL.
 

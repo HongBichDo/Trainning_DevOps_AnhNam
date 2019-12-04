@@ -20,7 +20,7 @@ DHCP làm việc theo mô hình client/server.
 - DHCP Client: máy trạm nhận thông tin cấu hình IP từ DHCP Server
 - Scope: phạm vi liên tiếp của các địa chỉ IP có thể cho một mạng.
 - Exclusion Scope: là dải địa chỉ nằm trong Scope không được cấp phát động cho Clients.
-- Reservation: Địa chỉ đặt trước dành riêng cho máy tính hoặc thiết bị chạy các dịch vụ (tùy chọn này thường được thiết lập để cấp phát địa chỉ cho các Server, Printer,…..)
+- Reservation: Địa chỉ đặt trước dành riêng cho máy tính hoặc thiết bị chạy các dịch vụ (tùy chọn này thường được thiết lập để cấp  phát địa chỉ cho các Server, Printer,…..)
 - Scope Options: các thông số được cấu hình thêm khi cấp phát IP động cho Clients như DNS Server(006), Router(003)
 
 # Cấu trúc gói tin DHCP
