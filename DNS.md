@@ -23,7 +23,7 @@ Giả sử bạn muốn truy cập vào trang google.com
 
 # Kiến trúc DNS
 ## Không gian tên miền
-![DNS](images/DNS_root.PNG)
+![DNS](images/DNS_root.png)
 
 Hệ thống DNS là hệ thống dạng phân tán và phân cấp hình cây có đỉnh Root. Khi client truy vấn tên miền sẽ đi lần lượt từ root phân cấp xuống dưới để đến DNS quản lý domain cần truy vấn.
 
