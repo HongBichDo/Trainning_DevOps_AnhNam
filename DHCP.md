@@ -23,8 +23,5 @@ DHCP làm việc theo mô hình client/server.
 - Reservation: Địa chỉ đặt trước dành riêng cho máy tính hoặc thiết bị chạy các dịch vụ (tùy chọn này thường được thiết lập để cấp  phát địa chỉ cho các Server, Printer,…..)
 - Scope Options: các thông số được cấu hình thêm khi cấp phát IP động cho Clients như DNS Server(006), Router(003)
 
-# Cấu trúc gói tin DHCP
-
-# Cấu hình dịch vụ DHCP
 ## Resource 
 - https://itforvn.com/tu-hoc-mcsa-mcse-2016-lab-4-cau-hinh-dhcp-server-va-backup-restore.html/

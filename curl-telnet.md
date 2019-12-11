@@ -78,7 +78,7 @@ curl -o google.html http://google.com/
 Câu lệnh trên sẽ tải nội dung trang http://google.com và lưu vào file google.html tại thư mục hiện tại.
 Để tải tập tin trên internet về máy
 ```sh
-curl -o my_file.zip http://google.com/
+curl -o ubuntu.iso http://releases.ubuntu.com/16.04.1/ubuntu-16.04.1-desktop-amd64.iso
 ```
 Trong đó:
 - `myfile.zip` để đổi tên file tải về.
@@ -87,7 +87,7 @@ Hiển thị thông tin quá trình tải
 Để hiển thị tiến trình trong quá trình tải ra stdout, thêm option --progress
 
 ```sh
-curl -o my_file.zip http://google.com/ --progress
+curl -o ubuntu.iso http://releases.ubuntu.com/16.04.1/ubuntu-16.04.1-desktop-amd64.iso --progress
 ```
 
 ### Request/Response HTTP
