@@ -41,6 +41,30 @@ Subnet Mask là dãy số dạng 32 bit hoặc 128 bit phân đoạn địa 
 - IP động: gán tự động cho từng kết nối. Việc gán tự động do máy chủ DHCP và bị thay đổi ở những lần kết nối tiếp theo.
 
 
+# Chia địa chỉ IP
+
+- Mục đích: dễ quản lý, tiết kiệm địa chỉ IP
+
+### Cách chia địa chỉ IP
+Lấy một số bit ở phần hostID sử dụng cho việc đánh địa chỉ mạng.
+Ví dụ: chia địa chỉ `192.168.1.0` thành 3 mạng con
+- Phân tích địa chỉ IP: 255.255.255.0
+ - NetID: 11111111.11111111.11111111
+ - HostID: 00000000
+Để chia thành 3 mạng con sử dụng 2 bit của h0stID thêm vào NetID (2^n >= m)
+- Địa chỉ: 11111111.11111111.11111111.11000000
+- Dạng thập phân: 255.255.255.192
+- Địa chỉ IP mới: 192.168.1.0/26 (sử dụng 26 bit cho netID)
+Bước nhay k = 256-192=64. Các mạng con có cùng Netmask: 255.255.255.192
+
+``` sh
+192.168.1.0
+192.168.1.64
+192.168.1.128
+192.168.1.192
+```
+
+
 
 # Resource 
 - https://hostingviet.vn/ip-la-gi-ip-dong-ip-tinh-la-gi-cac-dang-ip-thuong-gap
